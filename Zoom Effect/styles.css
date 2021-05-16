@@ -3,6 +3,7 @@ box-sizing: border-box;
 }
 
 body {
+    background-color: rebeccapurple;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,21 +12,16 @@ body {
     min-height: 100vh;
 }
 
-.carousel {
-    box-shadow: 2px 2px 5px rgba(0, 0,0 , 0.3);
-    overflow: hidden;
+#image-container{
+    box-shadow: 3px 3px 4px rgba(0,0,0, 0.3);
     height: 500px;
     width: 500px;
+    overflow: hidden;
 }
 
-.image-container {
-    display: flex;
-    transition: transform 0.3s linear;
-    transform: translateX(0); 
-}
-
-img {
-    object-fit: cover;
+img{
+    transform-origin: center center;
+    object-fit: cover ;
     height: 100%;
     width: 100%;
 }
